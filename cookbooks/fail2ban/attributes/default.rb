@@ -46,7 +46,7 @@ default['fail2ban']['jails'] = {
 	'banaction' => 'iptables-multiport',
 	'mta'       => 'sendmail',
 	'protocol'  => 'all', # all, tcp, udp
-	'actions'    => 'action_mw',
+	'actions'    => 'action_',
 	# jails to build
 	'jails'       => {
 		'ssh'  => {
