@@ -14,6 +14,9 @@ include_recipe "aws_cli"
 #  }
 #end
 
+#uncomment to install aws-cli tools
+#include_recipe "aws_cli"
+
 # uncomment to deny access to /log, /config, and .git directories as well as any .yml files
 # include_recipe "deny-directories"
 
