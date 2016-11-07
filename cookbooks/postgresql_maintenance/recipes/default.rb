@@ -6,10 +6,10 @@ if @node[:instance_role][/^db_master/]
     hour    '0'
     day     '*'
     month   '*'
-    weekday '0'
+    weekday '6'
     command '/usr/bin/vacuumdb -U postgres --all'
   end
-  
+
   # Alternative form - vacuums a specific named database and set of tables Midnight on Saturday
   # cron "manual_vacuumdb_#{dbname}" do
   #   minute  '0'
