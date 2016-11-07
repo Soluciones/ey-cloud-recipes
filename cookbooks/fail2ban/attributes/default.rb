@@ -40,7 +40,7 @@ default['fail2ban']['jails'] = {
 	'backend'     => 'auto',
 	# mail configuration
 	'mail'      => {
-		'destination'   => 'security_control@company.com',
+		'destination'   => 'simon@rankia.com',
 		'sender'        => 'root@localhost'
 	},
 	'banaction' => 'iptables-multiport',

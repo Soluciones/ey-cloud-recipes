@@ -4,7 +4,8 @@ include_recipe "postgresql_maintenance"
 #uncomment to install aws-cli tools
 include_recipe "aws_cli"
 
-# include_recipe "fail2ban"
+include_recipe "fail2ban"
+
 # uncomment to use a custom database.yml configuration
 # include_recipe "database_yml_custom"
 
