@@ -15,9 +15,6 @@ include_recipe "fail2ban"
 #  }
 #end
 
-#uncomment to install aws-cli tools
-#include_recipe "aws_cli"
-
 # uncomment to deny access to /log, /config, and .git directories as well as any .yml files
 # include_recipe "deny-directories"
 
@@ -133,9 +130,6 @@ include_recipe "fail2ban"
 
 #uncomment to include the Magento recipe
 #include_recipe "magento"
-
-# uncomment to include the Postgres Maintenance recipe
-#include_recipe "postgresql_maintenance"
 
 #enable Extension modules for a given Postgresql database
 # if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
