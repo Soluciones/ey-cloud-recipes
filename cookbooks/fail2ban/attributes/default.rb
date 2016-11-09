@@ -209,8 +209,9 @@ default['fail2ban']['jails'] = {
 				'filter'    => 'nginx-dos',
 				'logpath'   => '/var/log/nginx/*access.log',
 				'maxretry'  => '240',
-				'findtime'  => 60,
-				'bantime'   => 172800
+				'findtime'  => '60',
+				'bantime'   => '172800',
+				'action' => 'iptables-multiport[name=nginx-dos, port="http,https"]'
 			}
 		},
         'postfix'  => {
