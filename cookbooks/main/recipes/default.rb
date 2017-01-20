@@ -1,5 +1,5 @@
 # uncomment to include the Postgres Maintenance recipe
-include_recipe "postgresql_maintenance"
+# include_recipe "postgresql_maintenance"
 
 #uncomment to install aws-cli tools
 include_recipe "aws_cli"
